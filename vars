@@ -1,0 +1,8 @@
+set_var EASYRSA_REQ_COUNTRY    "IN"
+set_var EASYRSA_REQ_PROVINCE   "Karnataka"
+set_var EASYRSA_REQ_CITY       "Bengaluru City"
+set_var EASYRSA_REQ_ORG        "Besant"
+set_var EASYRSA_REQ_EMAIL      "afrozdd7@gmail.com"
+set_var EASYRSA_REQ_OU         "Institute"
+set_var EASYRSA_ALGO           "ec"
+set_var EASYRSA_DIGEST         "sha512" 
