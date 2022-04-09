@@ -1,10 +1,10 @@
-yes | sudo apt-get update
+yes | apt-get update
 export DEBIAN_FRONTEND=noninteractive
 
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 apt-get install -y tzdata
 dpkg-reconfigure --frontend noninteractive tzdata
-yes | sudo apt-get install easy-rsa
+yes | apt-get install easy-rsa
 ln -s /usr/share/easy-rsa/* ~/easy_rsa/
 cd ~/easy_rsa
 ./easyrsa init-pki
