@@ -24,5 +24,4 @@ cd ~/easy_rsa
 yes yes | ./easyrsa sign-req server tls
 cp ~/easy_rsa/pki/issued/tls.crt ~/Final-csr
 cd ~/Final-csr
-openssl pkcs12 -export -inkey tls.key -in tls.crt -out keystore.pkcs12 -password pass:passwordls -ltr
-
+openssl pkcs12 -export -inkey tls.key -in tls.crt -out keystore.pkcs12 -password pass:password && keytool -importkeystore -noprompt -srckeystore keystore.pkcs12 -srcstoretype pkcs12 -destkeystore keystore.jks -storepass password -srcstorepass password
