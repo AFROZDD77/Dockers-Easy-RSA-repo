@@ -13,7 +13,7 @@ yes | ./easyrsa build-ca nopass
 mkdir ~/Final-csr
 cd ~/Final-csr
 openssl genrsa -out tls.key
-apt install openjdk-8-jre-headless
+apt install default-jre
 apt install openssl
 openssl req -new -key tls.key -out tls.req -subj \
 /C=IN/ST=Karnataka/L=Benagaluru\ City/O=Besant/OU=Institute/CN=tls
